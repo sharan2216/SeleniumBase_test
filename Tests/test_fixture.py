@@ -25,7 +25,8 @@ def test_1(setup):
     driver.get("https://www.google.com/")
     driver.maximize_window()
     time.sleep(2)
-    driver.save_screenshot("ss1.png","C:\\Users\\shashi\\PycharmProjects\\PytestDemo_MukeshOtwani\\ScreenShots")
+    driver.g
+    driver.get_screenshot_as_file("ss1.png")
     print("Test 1 executed")
 
 
@@ -33,7 +34,7 @@ def test_2(setup):
     driver.get("https://www.cricbuzz.com/")
     driver.maximize_window()
     time.sleep(2)
-    driver.save_screenshot("ss2.png", "C:\\Users\\shashi\\PycharmProjects\\PytestDemo_MukeshOtwani\\ScreenShots")
+    driver.get_screenshot_as_file("ss2.png")
     print("Test 2 executed")
 
 def test_3(setup):
@@ -41,5 +42,5 @@ def test_3(setup):
     driver.get("https://www.oracle.com/")
     driver.maximize_window()
     time.sleep(2)
-    driver.save_screenshot("ss3.png", "C:\\Users\\shashi\\PycharmProjects\\PytestDemo_MukeshOtwani\\ScreenShots")
+    driver.get_screenshot_as_file("ss3.png")
     print("Test 3 executed")
