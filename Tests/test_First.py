@@ -10,6 +10,6 @@ def test_2():
     assert name in title
 
 def test_3():
-    name='jenkins'
+    name='Jenkins'
     title='Jenkins in CI server'
     assert name in title,"Title does not match"
