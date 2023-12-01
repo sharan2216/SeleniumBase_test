@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -21,14 +23,23 @@ def setup():
 
 def test_1(setup):
     driver.get("https://www.google.com/")
+    driver.maximize_window()
+    time.sleep(2)
+    driver.save_screenshot("ss1.png","C:\Users\shashi\PycharmProjects\PytestDemo_MukeshOtwani\ScreenShots")
     print("Test 1 executed")
 
 
 def test_2(setup):
     driver.get("https://www.cricbuzz.com/")
+    driver.maximize_window()
+    time.sleep(2)
+    driver.save_screenshot("ss2.png", "C:\Users\shashi\PycharmProjects\PytestDemo_MukeshOtwani\ScreenShots")
     print("Test 2 executed")
 
 def test_3(setup):
 
     driver.get("https://www.oracle.com/")
+    driver.maximize_window()
+    time.sleep(2)
+    driver.save_screenshot("ss3.png", "C:\Users\shashi\PycharmProjects\PytestDemo_MukeshOtwani\ScreenShots")
     print("Test 3 executed")
